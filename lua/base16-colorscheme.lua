@@ -166,7 +166,7 @@ function M.setup(colors, config)
     hi.SpecialKey                         = { guifg = M.colors.base03, guibg = nil, gui = nil, guisp = nil, ctermfg = M.colors.cterm03, ctermbg = nil }
     hi.TooLong                            = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = nil }
     hi.Underlined                         = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = nil }
-    hi.Visual                             = { guifg = nil, guibg = M.colors.base02, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm02 }
+    hi.Visual                             = { guifg = M.colors.base00, guibg = M.colors.base0B, gui = nil, guisp = nil, ctermfg = M.colors.cterm00, ctermbg = M.colors.cterm0B }
     hi.VisualNOS                          = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = nil }
     hi.WarningMsg                         = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = nil }
     hi.WildMenu                           = { guifg = M.colors.base08, guibg = M.colors.base0A, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm0A }
@@ -174,7 +174,7 @@ function M.setup(colors, config)
     hi.Conceal                            = { guifg = M.colors.base0D, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm0D, ctermbg = M.colors.cterm00 }
     hi.Cursor                             = { guifg = M.colors.base00, guibg = M.colors.base05, gui = nil, guisp = nil, ctermfg = M.colors.cterm00, ctermbg = M.colors.cterm05 }
     hi.NonText                            = { guifg = M.colors.base03, guibg = nil, gui = nil, guisp = nil, ctermfg = M.colors.cterm03, ctermbg = nil }
-    hi.LineNr                             = { guifg = M.colors.base04, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm00 }
+    hi.LineNr                             = { guifg = M.colors.base04, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm01 }
     hi.SignColumn                         = { guifg = M.colors.base04, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm00 }
     hi.StatusLine                         = { guifg = M.colors.base05, guibg = M.colors.base02, gui = 'none', guisp = nil, ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm02 }
     hi.StatusLineNC                       = { guifg = M.colors.base04, guibg = M.colors.base01, gui = 'none', guisp = nil, ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm01 }
@@ -184,7 +184,7 @@ function M.setup(colors, config)
     hi.ColorColumn                        = { guifg = nil, guibg = M.colors.base01, gui = 'none', guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
     hi.CursorColumn                       = { guifg = nil, guibg = M.colors.base01, gui = 'none', guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
     hi.CursorLine                         = { guifg = nil, guibg = M.colors.base01, gui = 'none', guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
-    hi.CursorLineNr                       = { guifg = M.colors.base04, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm01 }
+    hi.CursorLineNr                       = { guifg = M.colors.base07, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm02 }
     hi.QuickFixLine                       = { guifg = nil, guibg = M.colors.base01, gui = 'none', guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
     hi.PMenu                              = { guifg = M.colors.base05, guibg = M.colors.base01, gui = 'none', guisp = nil, ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm01 }
     hi.PMenuSel                           = { guifg = M.colors.base01, guibg = M.colors.base05, gui = nil, guisp = nil, ctermfg = M.colors.cterm01, ctermbg = M.colors.cterm05 }
