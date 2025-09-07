@@ -221,16 +221,16 @@ function M.setup(colors, config)
     hi.Type                               = { guifg = M.colors.base0A, guibg = nil, gui = 'none', guisp = nil, ctermfg = M.colors.cterm0A, ctermbg = nil }
     hi.Typedef                            = { guifg = M.colors.base0A, guibg = nil, gui = nil, guisp = nil, ctermfg = M.colors.cterm0A, ctermbg = nil }
 
-    -- Diff highlighting (GitHub-like style with subtle backgrounds)
-    local diff_add_bg = hex_re:match_str(M.colors.base0B) and hex_re:match_str(M.colors.base00) and darken(M.colors.base0B, 0.6) or M.colors.base00
-    local diff_delete_bg = hex_re:match_str(M.colors.base08) and hex_re:match_str(M.colors.base00) and darken(M.colors.base08, 0.6) or M.colors.base00
-    local diff_change_bg = hex_re:match_str(M.colors.base09) and hex_re:match_str(M.colors.base00) and darken(M.colors.base09, 0.8) or M.colors.base00
-    local diff_text_bg = hex_re:match_str(M.colors.base0B) and hex_re:match_str(M.colors.base00) and darken(M.colors.base0B, 0.7) or M.colors.base01
+    -- Diff highlighting (Claude code style)
+    local black = "#000000"
+    local diff_add_bg = "#7ad177"
+    local diff_delete_bg = "#f1a3ab"
+    local diff_text_bg = "#468f42"
 
-    hi.DiffAdd                            = { guifg = nil, guibg = diff_add_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
-    hi.DiffChange                         = { guifg = nil, guibg = diff_change_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
-    hi.DiffDelete                         = { guifg = nil, guibg = diff_delete_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
-    hi.DiffText                           = { guifg = nil, guibg = diff_text_bg, gui = 'bold', guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
+    hi.DiffAdd                            = { guifg = black, guibg = diff_add_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
+    hi.DiffChange                         = { guifg = black, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
+    hi.DiffDelete                         = { guifg = black, guibg = diff_delete_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
+    hi.DiffText                           = { guifg = black, guibg = diff_text_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
     hi.DiffAdded                          = { guifg = M.colors.base0B, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
     hi.DiffFile                           = { guifg = M.colors.base08, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
     hi.DiffNewFile                        = { guifg = M.colors.base0B, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
