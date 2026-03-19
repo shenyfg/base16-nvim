@@ -46,6 +46,7 @@ base16-0x96f
 base16-3024
 base16-apathy
 base16-apprentice
+base16-ascendancy
 base16-ashes
 base16-atelier-cave
 base16-atelier-cave-light
@@ -86,6 +87,7 @@ base16-black-metal-nile
 base16-black-metal-venom
 base16-blueforest
 base16-blueish
+base16-booshnickle-dark
 base16-brewer
 base16-bright
 base16-brogrammer
@@ -102,6 +104,10 @@ base16-charcoal-dark
 base16-charcoal-light
 base16-chicago-day
 base16-chicago-night
+base16-chinoiserie
+base16-chinoiserie-midnight
+base16-chinoiserie-morandi
+base16-chinoiserie-night
 base16-circus
 base16-classic-dark
 base16-classic-light
@@ -109,6 +115,7 @@ base16-codeschool
 base16-colors
 base16-cupcake
 base16-cupertino
+base16-cyberpunk
 base16-da-one-black
 base16-da-one-gray
 base16-da-one-ocean
@@ -131,6 +138,7 @@ base16-dracula
 base16-edge-dark
 base16-edge-light
 base16-eighties
+base16-eldritch
 base16-embers
 base16-embers-light
 base16-emil
@@ -148,6 +156,8 @@ base16-everforest-dark-hard
 base16-everforest-dark-medium
 base16-everforest-dark-soft
 base16-flat
+base16-flexoki-dark
+base16-flexoki-light
 base16-framer
 base16-fruit-soda
 base16-gigavolt
@@ -176,6 +186,7 @@ base16-gruvbox-material-light-hard
 base16-gruvbox-material-light-medium
 base16-gruvbox-material-light-soft
 base16-hardcore
+base16-hardhacker
 base16-harmonic-dark
 base16-harmonic-light
 base16-harmonic16-dark
@@ -278,6 +289,7 @@ base16-shapeshifter
 base16-silk-dark
 base16-silk-light
 base16-snazzy
+base16-soft-server
 base16-solarflare
 base16-solarflare-light
 base16-solarized-dark
@@ -335,6 +347,9 @@ base16-windows-nt
 base16-windows-nt-light
 base16-woodland
 base16-xcode-dusk
+base16-yesterday
+base16-yesterday-bright
+base16-yesterday-night
 base16-zenbones
 base16-zenburn
 ```
