@@ -232,11 +232,13 @@ function M.setup(colors, config)
     hi.DiffChange                         = { guifg = black, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
     hi.DiffDelete                         = { guifg = black, guibg = diff_delete_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
     hi.DiffText                           = { guifg = black, guibg = diff_text_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
-    hi.DiffAdded                          = { guifg = black, guibg = diff_add_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
-    hi.DiffFile                           = { guifg = diff_meta_fg, guibg = nil, gui = nil, guisp = nil, ctermfg = nil, ctermbg = nil }
-    hi.DiffNewFile                        = { guifg = diff_meta_fg, guibg = nil, gui = nil, guisp = nil, ctermfg = nil, ctermbg = nil }
+    hi.DiffAdded                          = 'DiffAdd'
+    -- ft=diff syntax 高亮组（snacks picker preview 使用）
+    hi.diffFile                           = { guifg = diff_meta_fg, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = nil, ctermbg = nil }
+    hi.diffOldFile                        = { guifg = diff_meta_fg, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = nil, ctermbg = nil }
+    hi.diffNewFile                        = { guifg = diff_meta_fg, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = nil, ctermbg = nil }
     hi.DiffLine                           = { guifg = black, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
-    hi.DiffRemoved                        = { guifg = black, guibg = diff_delete_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
+    hi.DiffRemoved                        = 'DiffDelete'
 
     -- Diffview.nvim highlighting
     if M.config.diffview then
@@ -467,6 +469,8 @@ function M.setup(colors, config)
         hi['@diff.plus']                = '@text.diff.add'
         hi['@diff.minus']               = '@text.diff.delete'
         hi['@diff.delta']               = 'DiffChange'
+        hi['@punctuation.special.diff'] = 'diffNewFile'
+        hi['@string.special.path.diff'] = 'diffNewFile'
         hi['@string.special.url']       = '@text.uri'
         hi['@keyword.directive']        = '@preproc'
         hi['@keyword.directive.define'] = '@define'
