@@ -226,16 +226,17 @@ function M.setup(colors, config)
     local diff_add_bg = "#7ad177"
     local diff_delete_bg = "#f1a3ab"
     local diff_text_bg = "#468f42"
+    local diff_meta_fg = "#c8c5b9"
 
     hi.DiffAdd                            = { guifg = black, guibg = diff_add_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
     hi.DiffChange                         = { guifg = black, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
     hi.DiffDelete                         = { guifg = black, guibg = diff_delete_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
     hi.DiffText                           = { guifg = black, guibg = diff_text_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm01 }
-    hi.DiffAdded                          = { guifg = M.colors.base0B, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
-    hi.DiffFile                           = { guifg = M.colors.base08, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
-    hi.DiffNewFile                        = { guifg = M.colors.base0B, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
-    hi.DiffLine                           = { guifg = M.colors.base0D, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm0D, ctermbg = M.colors.cterm00 }
-    hi.DiffRemoved                        = { guifg = M.colors.base08, guibg = M.colors.base00, gui = nil, guisp = nil, ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
+    hi.DiffAdded                          = { guifg = black, guibg = diff_add_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
+    hi.DiffFile                           = { guifg = diff_meta_fg, guibg = nil, gui = nil, guisp = nil, ctermfg = nil, ctermbg = nil }
+    hi.DiffNewFile                        = { guifg = diff_meta_fg, guibg = nil, gui = nil, guisp = nil, ctermfg = nil, ctermbg = nil }
+    hi.DiffLine                           = { guifg = black, guibg = M.colors.base01, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
+    hi.DiffRemoved                        = { guifg = black, guibg = diff_delete_bg, gui = nil, guisp = nil, ctermfg = nil, ctermbg = M.colors.cterm00 }
 
     -- Diffview.nvim highlighting
     if M.config.diffview then
